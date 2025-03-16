@@ -14,11 +14,12 @@ import LinkCard from "../components/mdx/LinkCard.astro";
 
 const allBlogPosts = await getCollection("blog");
 const latestPosts = allBlogPosts.slice(0,3).sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
----
-<BaseCard title="Home">
+
+<BaseLayout title="Home">
+  <BaseCard title="Home">
     <div class="flex">
       <div class="p-6">
-          # Merhaba, ben Eser Sevinç! 👋
+          # Merhaba, ben Eser Sevinç! 👋 v.1.6
 
           Yazılım sektöründe **İş Analisti** ve **Proje Yöneticisi** olarak çalışıyorum.
 
@@ -64,8 +65,9 @@ const latestPosts = allBlogPosts.slice(0,3).sort((a, b) => new Date(b.data.pubDa
 
    Simply run the following command in your terminal:
 
-
-sh npm create astro@latest -- --template EveSunMaple/Frosti
+   ```sh
+   npm create astro@latest -- --template EveSunMaple/Frosti
+   ```
 
 2. **Configure the Comment System**
 
@@ -82,9 +84,10 @@ sh npm create astro@latest -- --template EveSunMaple/Frosti
 
 ### Star History
 
-
-
   </BaseCard>
+  
+  </BaseCard>
+  
     <BaseCard title="Son Blog Yazıları">
       {latestPosts.map((post) => (
         <EnvelopeCard
@@ -102,4 +105,5 @@ sh npm create astro@latest -- --template EveSunMaple/Frosti
         />
       ))}
     </BaseCard>
+
 </BaseLayout>
