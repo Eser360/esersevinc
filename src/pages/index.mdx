@@ -15,12 +15,7 @@ import LinkCard from "../components/mdx/LinkCard.astro";
 const allBlogPosts = await getCollection("blog");
 const latestPosts = allBlogPosts.slice(0,3).sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 ---
-<BaseLayout title="Home">
-    <BaseCard title="Bir şeyler yazıyorum">
-        Bir şeyler yazmayı ve içerik üretmeyi seviyorum. En büyük hayalim, iş hayatına daha az zaman ayrırarak, artan zamanım ile; daha çok bisiklet sürmek, bloguma daha fazla içerik oluşturmak istiyorum.
-        Burada, mesleki deneyimlerimi paylaşıyor olacağım. Aynı zamanda kısa hikayeler yazıyor olacağım.
-    </BaseCard>
-  <BaseCard title="Home">
+<BaseCard title="Home">
     <div class="flex">
       <div class="p-6">
           # Merhaba, ben Eser Sevinç! 👋
