@@ -82,4 +82,27 @@ import LinkCard from "../components/mdx/LinkCard.astro";
 
 
   </BaseCard>
+<BaseLayout title="Blog">
+  <BaseCard title="search">
+    <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+  </BaseCard>
+  {
+    page.data.map((post: Post) => (
+      <EnvelopeCard
+        title={post.data.title}
+        image={post.data.image}
+        desc={post.data.description}
+        url={"/blog/" + post.slug}
+        pubDate={post.data.pubDate}
+        badge={post.data.badge}
+        categories={post.data.categories}
+        tags={post.data.tags}
+        word={post.remarkPluginFrontmatter.totalCharCount}
+        time={post.remarkPluginFrontmatter.readingTime}
+        target="_self"
+      />
+    ))
+  }
+  <Pagination page={page} totalPages={totalPages} pageLinks={pageLinks} baseUrl={`/blog`} />
+</BaseLayout>
 </BaseLayout>
