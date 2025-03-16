@@ -1,7 +1,7 @@
 import { getCollection } from "astro:content";
 import EnvelopeCard from "../components/EnvelopeCard.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
 import BaseCard from "../components/BaseCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import Collapse from "../components/mdx/Collapse.astro";
 import Diff from "../components/mdx/Diff.astro";
 import Error from "../components/mdx/Error.astro";
@@ -12,14 +12,11 @@ import Warning from "../components/mdx/Warning.astro";
 import TimeLine from "../components/mdx/TimeLine.astro";
 import LinkCard from "../components/mdx/LinkCard.astro";
 
-const allBlogPosts = await getCollection("blog");
-const latestPosts = allBlogPosts.slice(0,3).sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
-
 <BaseLayout title="Home">
   <BaseCard title="Home">
     <div class="flex">
       <div class="p-6">
-          # Merhaba, ben Eser Sevinç! 👋 v.1.6
+          # Merhaba, ben Eser Sevinç! 👋 v.1.7
 
           Yazılım sektöründe **İş Analisti** ve **Proje Yöneticisi** olarak çalışıyorum.
 
@@ -84,26 +81,8 @@ const latestPosts = allBlogPosts.slice(0,3).sort((a, b) => new Date(b.data.pubDa
 
 ### Star History
 
+
+
   </BaseCard>
-  
-  </BaseCard>
-  
-    <BaseCard title="Son Blog Yazıları">
-      {latestPosts.map((post) => (
-        <EnvelopeCard
-          title={post.data.title}
-          image={post.data.image}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          pubDate={post.data.pubDate}
-          badge={post.data.badge}
-          categories={post.data.categories}
-          tags={post.data.tags}
-          word={post.remarkPluginFrontmatter?.totalCharCount}
-          time={post.remarkPluginFrontmatter?.readingTime}
-          target="_self"
-        />
-      ))}
-    </BaseCard>
 
 </BaseLayout>
