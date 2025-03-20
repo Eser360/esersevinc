@@ -1,10 +1,13 @@
 ---
-title: Lorem Ipsum
-description: ……
-pubDate: 16 3 2025
-image: /image/image4.jpg
+title: "Deneme"
+description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
+pubDate: "Marc 03 2025"
+image: /image/image1.png
 categories:
-  - life
+  - tech
+tags:
+  - Makrdown
+badge: Pin
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus justo nec turpis tristique, ut sagittis diam sagittis. Nunc libero nibh, vulputate a cursus a, condimentum in nibh. Curabitur et maximus ex. Nam euismod orci ut porta condimentum. Donec eget ante tempor ligula congue pretium ac ac elit. Mauris dapibus imperdiet odio nec iaculis. Maecenas lobortis cursus mi, sed fringilla risus pulvinar id. Integer massa neque, commodo non consectetur ut, viverra sit amet arcu. Donec tempus, dolor sit amet placerat tempus, ante purus eleifend enim, ac auctor nisl mi eu ex. Aenean consequat lorem ligula, egestas accumsan quam volutpat pellentesque. Praesent maximus mauris a ipsum faucibus egestas. Ut eget lacinia diam. Etiam a consectetur diam.
