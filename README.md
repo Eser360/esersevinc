@@ -138,8 +138,8 @@ You can configure sub-menu items by adding `subItems` with the same format as ma
 
 ```yaml
 user:
-  name: EveSunMaple # Username
-  site: "https://example.com" # User website
+  name: Eser Sevinç # Username
+  site: "https://esersevinc.com.tr" # User website
   avatar: /profile.png # User avatar
 ```
 
@@ -150,7 +150,7 @@ Sidebar and footer can have different social media links:
 ```yaml
 sidebar:
   social:
-    - href: "https://github.com/username" # Link address
+    - href: "https://github.com/Eser360" # Link address
       ariaLabel: Github # Accessibility label
       title: Github # Tooltip on hover
       svg: "ri:github-line" # Icon code
@@ -168,7 +168,7 @@ Frosti supports multiple languages, configured through:
 
 ```yaml
 site:
-  language: en # Set to "en" for English, "zh" for Chinese
+  language: en # Set to "en" for English, "zh" for Chinese, "tr" for Türkçe
 ```
 
 2. Managing all interface text translations in the `src/i18n/translations.yaml` file:

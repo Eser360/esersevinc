@@ -42,47 +42,47 @@ en:
     404exploreBlog: Explore our blog
     404browseArchives: Browse archives
     404searchContent: Search content
-zh:
+tr:
   label:
-    noTag: 未分配标签
-    tagCard: 标签
-    tagPage: 标签
-    totalTags: 标签总数
-    noCategory: 未分配分类
-    categoryCard: 分类
-    categoryPage: 分类
-    totalCategories: 分类总数
-    noPosts: 暂无文章
-    archivePage: 文章归档
-    totalPosts: 文章总数
-    link: "链接: "
-    prevPage: 上一页
-    nextPage: 下一页
-    wordCount: 字
-    readTime: 分钟
-    share: 分享
-    shareCard: 分享这篇博客
-    close: 关闭
-    learnMore: 了解更多
-    allTags: 所有标签
-    allCategories: 所有分类
-    post: 篇文章
-    posts: 篇文章
-    tagDescription: 浏览此标签下的所有文章
-    categoryDescription: 浏览此分类下的所有文章
-    tagsPageDescription: 探索博客中使用的所有标签
-    categoriesPageDescription: 探索博客中可用的所有分类
-    archivesPageDescription: 按日期浏览文章
-    backToBlog: 返回博客
-    searchPage: 搜索
-    searchPageDescription: 搜索博客中的所有文章
-    search: 搜索
-    searchPlaceholder: 输入关键词搜索...
-    404title: 页面未找到
-    404description: 看起来您已经进入了未知领域。您查找的页面不存在或已被转移到另一个维度。
-    404backHome: 返回首页
-    404goBack: 返回上页
-    404youMightLike: 您可能对以下内容感兴趣
-    404exploreBlog: 浏览我们的博客
-    404browseArchives: 浏览归档
-    404searchContent: 搜索内容
+    noTag: Atanmış etiket yok
+    tagCard: Etiketler
+    tagPage: Etiket
+    totalTags: Toplam Etiketler
+    noCategory: Atanmış kategori yok
+    categoryCard: Kategoriler
+    categoryPage: Kategori
+    totalCategories: Toplam Kategoriler
+    noPosts: Mevcut gönderi yok
+    archivePage: Arşivler
+    totalPosts: Toplam Gönderi
+    link: Bağlantı
+    prevPage: Son gönderiler
+    nextPage: Eski gönderiler
+    wordCount: kelimeler
+    readTime: dakika
+    share: Paylaş
+    shareCard: Bu makaleyi paylaş
+    close: Kapat
+    learnMore: Daha fazla bilgi edinin
+    allTags: Tüm Etiketler
+    allCategories: Tüm Kategoriler
+    post: gönderi
+    posts: gönderiler
+    tagDescription: Bu etikete sahip tüm makalelere göz atın
+    categoryDescription: Bu kategorideki tüm makalelere göz atın
+    tagsPageDescription: Blog genelinde kullanılan tüm etiketleri keşfedin
+    categoriesPageDescription: Blogda bulunan tüm kategorileri keşfedin
+    archivesPageDescription: Tarihe göre düzenlenmiş makalelere göz atın
+    backToBlog: Blog'a Geri Dön
+    searchPage: Arama
+    searchPageDescription: Blog genelinde makale arama
+    search: Arama
+    searchPlaceholder: Aramak için yazın...
+    404title: Sayfa Bulunamadı
+    404description: “Görünüşe göre bilinmeyene doğru ilerliyorsunuz. Aradığınız sayfa mevcut değil veya başka bir boyuta taşındı.”
+    404backHome: Ana Sayfaya Geri Dön
+    404goBack: Geri Git
+    404youMightLike: İlginizi çekebilir
+    404exploreBlog: Blogumuzu keşfedin
+    404browseArchives: Arşivlere göz atın
+    404searchContent: Arama içeriği
