@@ -7,7 +7,7 @@ site:
   language: en # 网站的语言，例如 "en" 是英文
 =======
   title: Eser Sevinç # 网站的标题
-  description: Eser Sevinç'in kişisel blogu. # 网站的描述，用于SEO等
+  description: Eser Sevinç'in kişisel blogu. İş Analizi, Proj Yönetimi, Ekip Yönetimi vb... # 网站的描述，用于SEO等
   language: tr # 网站的语言，例如 "en" 是英文
 >>>>>>> 33b68df (v1.6)
   favicon: /favicon.ico # 网站的图标，用于浏览器标签栏和其他地方显示
