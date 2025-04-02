@@ -66,7 +66,7 @@ user:
   name: Eser Sevinç # 用户名
   site: "https://esersevinc.com.tr" # 用户的网站链接
   avatar: /ES.png # 用户头像路径
-  sidebar:  # 侧边栏配置
+  sidebar: # 侧边栏配置
     social:
       - href: "https://buymeacoffee.com/esersevinc" # 链接
         ariaLabel: Support my work # 图标的可访问性标签
@@ -76,14 +76,14 @@ user:
         ariaLabel: Github
         title: Github
         svg: "ri:github-line"
-      - href: "https://space.bilibili.com/438392347"
-        ariaLabel: BiliBili
-        title: BiliBili
-        svg: "ri:bilibili-line"
       - href: "https://mastodon.social/@esersevinc"
-        ariaLabel: X(twitter)
+        ariaLabel: Mastodon
         title: Mastodon
-        svg: "ri:twitter-line"
+        svg: "ri:mastodon-line"
+      - href: "https://www.linkedin.com/in/esersevinc/"
+        ariaLabel: Linkedin
+        title: Linkedin
+        svg: "ri:linkedin-line"
   footer:
     social:
       - href: "https://buymeacoffee.com/esersevinc" # 链接
@@ -93,12 +93,12 @@ user:
       - href: "https://github.com/EveSunMaple"
         ariaLabel: Github
         title: Github
-        svg: "ri:github-line"
-      - href: "https://space.bilibili.com/438392347"
-        ariaLabel: BiliBili
-        title: BiliBili
-        svg: "ri:bilibili-line"
+        svg: "ri:mastodon-line"
       - href: "https://mastodon.social/@esersevinc"
-        ariaLabel: X(twitter)
+        ariaLabel: Mastodon
         title: Mastodon
-        svg: "ri:twitter-line"
+        svg: "ri:mastodon-line"
+      - href: "https://www.linkedin.com/in/esersevinc/"
+        ariaLabel: Linkedin
+        title: Linkedin
+        svg: "ri:linkedin-line"
