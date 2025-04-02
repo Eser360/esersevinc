@@ -3,33 +3,83 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Icon } from "astro-icon/components";
 import MainCard from "@/components/MainCard.astro";
 import GitHubStats from "@/components/mdx/GitHubStats.astro";
+import TimeLine from "@/components/mdx/TimeLine.astro";
 import RepositoryCard from "@/components/mdx/RepositoryCard.astro";
+
 ---
 
 <BaseLayout title="Projects - GitHub Repositories">
   <MainCard
-    title="Projects"
-    description="A showcase of my open-source projects and contributions on GitHub."
+    title="Projeler"
+    description="Yönettiğim veya geliştirmeye çalıştığım projeler."
     textOverlay="PROJELER"
     infoIcon="lucide:code-2"
   >
-    <!-- Featured Projects -->
-    <section class="py-4">
-      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
-        <Icon name="lucide:star" class="w-6 h-6 text-primary" />
-        <span>Son Projeler</span>
-      </h2>
 
-      <GitHubStats username="Eser Sevinç" repositoryName="Eser360" showLanguages={true} showContributors={true} />
-    </section>
-
-    <!-- Open Source Contributions -->
+    <!-- Big Project -->
     <section class="py-4">
       <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
         <Icon name="lucide:git-pull-request" class="w-6 h-6 text-primary" />
-        <span>Open Source Contributions</span>
+        <span>Yönettiğim Başlıca Projeler</span>
       </h2>
 
+
+<TimeLine
+  items={[
+    { year: "2006", event: "BAYCAN A.Ş - Lojistik Departmanının kurulması, nakliye faaliyetlerinin outsource edilmesi" },
+    { year: "2010", event: "SARAR Giyim - E-Ticaret sitesinin kurulması" },
+    { year: "2020", event: "Roketsan - Yönetim Sistemleri Yazılımı - İş analizi ve devreye alma proje yönetimi" },
+    { year: "2021", event: "EAE Elektroteknik - Yönetim Sistemleri Yazılımı - ve devreye alma proje yönetimi" },
+    { year: "2022", event: "C Tech - Yönetim Sistemleri Yazılımı - ve devreye alma proje yönetimi" },
+    { year: "2023", event: "Amerikan Hastaneleri - Yönetim Sistemleri Yazılımı - İş analizi ve devreye alma proje yönetimi" },
+    { year: "2023", event: "Nadir Metal - Yönetim Sistemleri Yazılımı - ve devreye alma proje yönetimi" },
+    { year: "2025", event: "MKE - Yönetim Sistemleri Yazılımı - İş analizi ve devreye alma proje yönetimi" },
+  ]}
+/>
+    </section>
+
+    <!-- Big Project -->
+    <section class="py-4">
+      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+        <Icon name="lucide:git-pull-request" class="w-6 h-6 text-primary" />
+        <span>Yönettiğim Diğer Projeler</span>
+      </h2>
+
+      <p>
+        Yönetim sistemleri iş analizi ve devreye alma projeleri yönetilen diğer kuruluşlar.
+      </p>
+      <ul>
+        <li>-Mitrona</li>
+        <li>-Dioki Petrokimya</li>
+        <li>-Alpha Metalürji</li>
+        <li>-Tisan Mühendislik</li>
+        <li>-Baycan A.Ş</li>
+        <li>-Ertunç Özcan</li>
+        <li>-Nadir Metal</li>
+        <li>-Barko Elektronik</li>
+        <li>-Milmast</li>
+        <li>-Sinop Beton</li>
+        <li>-Bilecik Demir</li>
+        <li>-Çanakkale</li>
+        <li>-ETKO Tarım</li>
+        <li>-İzmirGaz</li>
+        <li>-ESGAZ</li>
+        <li>-Balonevi</li>
+        <li>-Hobim IT</li>
+        <li>-İST</li>
+        <li>-Çanakkale Liman</li>
+      </ul>
+
+
+    </section>
+
+    <!-- Freelance Project -->
+    <section class="py-4">
+      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+        <Icon name="lucide:git-pull-request" class="w-6 h-6 text-primary" />
+        <span>Freelance Çalıştığım Projeler</span>
+      </h2>
+  
       <div class="card bg-base-200 p-6">
         <ul class="space-y-6">
           {
@@ -79,5 +129,16 @@ import RepositoryCard from "@/components/mdx/RepositoryCard.astro";
         </ul>
       </div>
     </section>
+  
+    <!-- Github Projects -->
+    <section class="py-4">
+      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+        <Icon name="lucide:star" class="w-6 h-6 text-primary" />
+        <span>Github Projeler</span>
+      </h2>
+       <p>Amatör olarak çalıştığım github projeleri</p> <br>
+      <GitHubStats username="Eser360" repositoryName="Eser360" showLanguages={true} showContributors={true} />
+    </section>
+  
   </MainCard>
 </BaseLayout>

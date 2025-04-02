@@ -1,14 +1,14 @@
 # 网站的基本信息
 site:
-  tab: Frosti # 浏览器标签栏上显示的文本
-  title: Eser Sevinç # 网站的标题
-  description: Eser Sevinç'in kişisel blogu. İş Analizi, Proje Yönetimi, Ekip Yönetimi ... # 网站的描述，用于SEO等
+  tab: Eser Sevinç # 浏览器标签栏上显示的文本
+  title: Eser Sevinç'in kişisel blogu. # 网站的标题
+  description: Yazılım sektöründe; İş Analizi, Proje Yönetimi, Ekip Yönetimi ve Liderlik gibi konular üzerine bilgi birikimi. # 网站的描述，用于SEO等
   language: en # 网站的语言，例如 "en" 是英文
   favicon: /favicon.ico # 网站的图标，用于浏览器标签栏和其他地方显示
   theme: # 更多主题 https://daisyui.com/docs/themes/
-    light: winter # 主题的浅色模式
-    dark: dracula # 主题的深色模式
-    code: github-dark # 代码块的主题 https://shiki.style/themes
+    light: light # 主题的浅色模式
+    dark: dim # 主题的深色模式
+    code: dracula # 代码块的主题 https://shiki.style/themes
   date_format: ddd MMM DD YYYY # 日期格式设置，支持自定义格式
   blog: # 博客相关配置
     pageSize: 8 # 每页显示的文章数量
@@ -93,7 +93,7 @@ user:
       - href: "https://github.com/EveSunMaple"
         ariaLabel: Github
         title: Github
-        svg: "ri:mastodon-line"
+        svg: "ri:github-line"
       - href: "https://mastodon.social/@esersevinc"
         ariaLabel: Mastodon
         title: Mastodon
