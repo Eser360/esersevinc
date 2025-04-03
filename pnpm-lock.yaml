@@ -71,6 +71,9 @@ importers:
       octokit:
         specifier: ^4.1.2
         version: 4.1.2
+      partytown:
+        specifier: ^0.0.0
+        version: 0.0.0
       rehype-external-links:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4923,6 +4926,9 @@ packages:
   parse5@7.2.1:
     resolution: {integrity: sha512-BuBYQYlv1ckiPdQi/ohiivi9Sagc9JG+Ozs0r7b/0iK3sKmrb0b9FdWdBbOdx6hBCM/F9Ir82ofnBhtZOjCRPQ==}
 
+  partytown@0.0.0:
+    resolution: {integrity: sha512-SrBEhwsjx5NeVZMuOdNgUKoKXVDDk2a+GTQmN0hbThc8KsvRp9D5HCidgMwuvUrUiG4XFvNnbS3Nj/Q5j6xLtg==}
+
   pascal-case@3.1.2:
     resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
 
@@ -9537,7 +9543,7 @@ snapshots:
       unstorage: 1.15.0
       vfile: 6.0.3
       vite: 6.2.2(@types/node@22.13.11)(jiti@1.21.7)(lightningcss@1.28.2)(sass-embedded@1.86.0)(terser@5.37.0)(yaml@2.7.0)
-      vitefu: 1.0.6(vite@6.2.2(@types/node@22.13.11)(jiti@1.21.7)(lightningcss@1.28.2)(sass-embedded@1.86.0)(terser@5.39.0)(yaml@2.7.0))
+      vitefu: 1.0.6(vite@6.2.2(@types/node@22.13.11)(jiti@1.21.7)(lightningcss@1.28.2)(sass-embedded@1.86.0)(terser@5.37.0)(yaml@2.7.0))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.1
@@ -13052,6 +13058,8 @@ snapshots:
     dependencies:
       entities: 4.5.0
 
+  partytown@0.0.0: {}
+
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
@@ -14736,6 +14744,10 @@ snapshots:
       sass-embedded: 1.86.0
       terser: 5.39.0
       yaml: 2.7.0
+
+  vitefu@1.0.6(vite@6.2.2(@types/node@22.13.11)(jiti@1.21.7)(lightningcss@1.28.2)(sass-embedded@1.86.0)(terser@5.37.0)(yaml@2.7.0)):
+    optionalDependencies:
+      vite: 6.2.2(@types/node@22.13.11)(jiti@1.21.7)(lightningcss@1.28.2)(sass-embedded@1.86.0)(terser@5.37.0)(yaml@2.7.0)
 
   vitefu@1.0.6(vite@6.2.2(@types/node@22.13.11)(jiti@1.21.7)(lightningcss@1.28.2)(sass-embedded@1.86.0)(terser@5.39.0)(yaml@2.7.0)):
     optionalDependencies:
