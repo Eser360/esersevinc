@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.16.0",
+    "@astrojs/partytown": "^2.1.4",
     "@iconify-json/logos": "^1.2.4",
     "@iconify-json/lucide": "^1.2.32",
     "@iconify-json/material-symbols": "^1.2.17",
