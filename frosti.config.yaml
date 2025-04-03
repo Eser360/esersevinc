@@ -4,7 +4,7 @@ site:
   title: Eser Sevinç'in kişisel blogu. # 网站的标题
   description: Yazılım sektöründe; İş Analizi, Proje Yönetimi, Ekip Yönetimi ve Liderlik gibi konular üzerine bilgi birikimi. # 网站的描述，用于SEO等
   language: en # 网站的语言，例如 "en" 是英文
-  favicon: /favicon.ico # 网站的图标，用于浏览器标签栏和其他地方显示
+  favicon: /favicon.ico #Tarayıcı sekmelerinde ve diğer yerlerde kullanılan web sitesinin simgesi
   theme: # 更多主题 https://daisyui.com/docs/themes/
     light: light # 主题的浅色模式
     dark: dim # 主题的深色模式
@@ -24,7 +24,7 @@ site:
       svg: "material-symbols:info-outline-rounded"
       target: _self
     - id: blog
-      text: Blogs
+      text: Blog
       href: /blog
       svg: "material-symbols:book-2-outline-rounded"
       target: _self
@@ -90,7 +90,7 @@ user:
         ariaLabel: Support my work # 图标的可访问性标签
         title: Bir kahve ısmarla # 图标的悬浮标题
         svg: "ri:cup-line"
-      - href: "https://github.com/EveSunMaple"
+      - href: "https://github.com/Eser360"
         ariaLabel: Github
         title: Github
         svg: "ri:github-line"
