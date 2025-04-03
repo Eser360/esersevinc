@@ -4,7 +4,7 @@ site:
   title: Eser Sevinç'in kişisel blogu. # 网站的标题
   description: Yazılım sektöründe; İş Analizi, Proje Yönetimi, Ekip Yönetimi ve Liderlik gibi konular üzerine bilgi birikimi. # 网站的描述，用于SEO等
   language: en # 网站的语言，例如 "en" 是英文
-  favicon: /favicon.ico #Tarayıcı sekmelerinde ve diğer yerlerde kullanılan web sitesinin simgesi
+  favicon: /favicon.ico # Tarayıcı sekmelerinde ve diğer yerlerde kullanılan web sitesinin simgesi
   theme: # 更多主题 https://daisyui.com/docs/themes/
     light: light # 主题的浅色模式
     dark: dim # 主题的深色模式
