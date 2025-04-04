@@ -4,13 +4,12 @@ import { t } from "@config";
 import { Icon } from "astro-icon/components";
 import MainCard from "@/components/MainCard.astro";
 import Info from "@/components/mdx/Info.astro";
-import "@/styles/contactedit.scss";
 ---
 
 <BaseLayout title="İletişim Seçenekleri">
   <MainCard
     title="İletişim Seçenekleri"
-    description="Herhangi bir konuda benimle iletişime geçmektne çekinmeyin."
+    description="Herhangi bir konuda benimle iletişime geçmekten çekinmeyin."
     textOverlay="CONTACT"
     infoIcon="lucide:contact"
   >
@@ -23,48 +22,102 @@ import "@/styles/contactedit.scss";
     ><br />
     <br />
 
-    <!-- 
-    This is a working contact form. To receive email, 
-    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
-
-    Create Access Key here 👉 https://web3forms.com/
- -->
-
 <section class="contact-section">
-    <div class="contact-intro">
-      <h2 class="contact-title">İletişime Geçin</h2>
-      <p class="contact-description">
-        Aşağıdaki formu doldurun, en kısa sürede size geri dönüş yapmaya çalışacağım.
-      </p>
-    </div>
   
-    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-  
-      <input type="hidden" name="access_key" value="805a5934-78ad-40bc-be51-41f648fa8a61" />
-      <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-      <input type="hidden" name="from_name" value="My Website" />
-      <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
-  
-      <div class="form-group-container">
-        <div class="form-group">
-          <label for="name" class="form-label">Adınız</label>
-          <input id="name" name="name" class="form-input" placeholder="Ad Soyad" type="text" />
-        </div>
-        <div class="form-group">
-          <label for="email" class="form-label">E-posta</label>
-          <input id="email" name="email" class="form-input" placeholder="E-posta adresiniz" type="email" />
-        </div>
-        <div class="form-group">
-          <label for="phone" class="form-label">Telefon numaranız</label>
-          <input id="phone" name="phone" class="form-input" placeholder="+90 (111) 2223344" type="text" />
-        </div>
-        <div class="form-group">
-          <label for="message" class="form-label">Mesajınız</label>
-          <textarea class="form-textarea" id="message" name="message" placeholder="Mesajınız"></textarea>
-        </div>
+<script>
+const form = document.getElementById("form");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function (e) {
+  const formData = new FormData(form);
+  e.preventDefault();
+  var object = {};
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+  var json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: json
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-green-500");
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-red-500");
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 5000);
+    });
+});
+</script>
+
+
+<div class="flex items-center min-h-screen bg-gray-transparent">
+  <div class="container mx-auto">
+    <div class="max-w-3/4 mx-auto bg-gray-transparent p-5 rounded-md shadow-sm">
+      <div class="text-center">
+        <h1 class="my-3 text-3xl font-semibold text-gray-500">
+          Bana Mesaj Gönderin
+        </h1>
+        <p class="text-gray-500 dark:text-gray-500">
+          Aşağıdaki formu doldurun, en kısa sürede size geri dönüş yapacağım.
+        </p>
       </div>
-      <button class="form-submit" type="submit">Gönder</button>
-    </form>
+      <div class="m-7">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="805a5934-78ad-40bc-be51-41f648fa8a61" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+          <div class="mb-6">
+            <label for="name" class="block mb-2 text-sm text-gray-500">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm text-gray-500">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
+          </div>
+          <div class="mb-6">
+            <label for="phone" class="block mb-2 text-sm text-gray-500">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block mb-2 text-sm text-gray-500">Your Message</label>
+
+            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" required></textarea>
+          </div>
+          <div class="mb-6">
+            <button type="submit" class="w-full bg-indigo-600 inline-block text-white no-underline hover:text-indigo-100 py-4 px-4 rounded-sm focus:outline-none">
+              Send Message
+            </button>
+          </div>
+          <p class="text-base text-center text-gray-500" id="result"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
   
   </section>
   
