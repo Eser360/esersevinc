@@ -58,7 +58,6 @@ site:
     - id: contact
       text: İletişim
       href: "/contact"
-      target: _blank # 在新标签页打开
       svg: "material-symbols:attach-email-outline-rounded"
 
 # 用户的个人信息
