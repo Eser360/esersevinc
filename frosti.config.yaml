@@ -36,7 +36,7 @@ site:
           target: _self
         - id: tech
           text: İş ile ilgili
-          href: /blog/category/tech
+          href: /blog/category/work
           svg: "material-symbols:deployed-code-outline"
           target: _self
         - id: life
@@ -57,7 +57,7 @@ site:
       target: _self
     - id: contact
       text: İletişim
-      href: "/contact"
+      href: /contact
       svg: "material-symbols:attach-email-outline-rounded"
 
 # 用户的个人信息
