@@ -67,22 +67,22 @@ user:
   avatar: /ES.png # Kullanıcı avatar yolu
   sidebar: # Kenar Çubuğu Yapılandırması
     social:
-      - href: "https://buymeacoffee.com/esersevinc" # Bağlantı
-        ariaLabel: Support my work # Simgeler için erişilebilirlik etiketleri
-        title: Bir kahve ısmarla # Simge yüzen başlık
-        svg: "ri:cup-line"
-      - href: "https://github.com/Eser360"
-        ariaLabel: Github
-        title: Github
-        svg: "ri:github-line"
-      - href: "https://mastodon.social/@esersevinc"
-        ariaLabel: Mastodon
-        title: Mastodon
+      - href: "https://mastodon.social/@esersevinc" # Bağlantı
+        ariaLabel: Mastodon # Simgeler için erişilebilirlik etiketleri
+        title: Mastodon # Simge yüzen başlık
         svg: "ri:mastodon-line"
       - href: "https://www.linkedin.com/in/esersevinc/"
         ariaLabel: Linkedin
         title: Linkedin
         svg: "ri:linkedin-line"
+      - href: "https://www.strava.com/athletes/esersevinc/"
+        ariaLabel: Strava
+        title: Strava
+        svg: "ri:strava-line"
+      - href: "https://buymeacoffee.com/esersevinc"
+        ariaLabel: Support my work
+        title: Bir kahve ısmarla
+        svg: "ri:cup-line"
   footer:
     social:
       - href: "https://buymeacoffee.com/esersevinc" # Bağlantı
@@ -101,3 +101,7 @@ user:
         ariaLabel: Linkedin
         title: Linkedin
         svg: "ri:linkedin-line"
+      - href: "https://www.strava.com/athletes/esersevinc/"
+        ariaLabel: Strava
+        title: Strava
+        svg: "ri:strava-line"
