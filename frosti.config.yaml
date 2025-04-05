@@ -6,8 +6,8 @@ site:
   language: en # 网站的语言，例如 "en" 是英文
   favicon: /favicon.ico # Tarayıcı sekmelerinde ve diğer yerlerde kullanılan web sitesinin simgesi
   theme: # Daha fazla tema için https://daisyui.com/docs/themes/
-    light: light # Açık mod
-    dark: dim # Koyu mod
+    light: emerald # Açık mod
+    dark: abyss # Koyu mod
     code: dracula # Kod bloğunun teması https://shiki.style/themes
   date_format: ddd MMM DD YYYY # Tarih biçimi ayarı, özel biçimi destekler
   blog: # Blog ile ilgili yapılandırma
