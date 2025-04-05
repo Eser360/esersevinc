@@ -1,0 +1,71 @@
+---
+title: Blogumu Nasıl Oluşturdum?
+description: Astro.Build kullanarak, Netlify'da GitHub Projesi Dağıtımı, MDX kullanımı ve Astro Tema özelleştirme
+pubDate: 05 04 2025
+image: /image/2025/blogumu-nasil-olusturdum.jpg
+categories:
+- life
+tags:
+- blog
+---
+import Diff from "../../components/mdx/Diff.astro";
+
+Son birkaç haftadır üzerinde aralıklı olarak çalıştığım blogumu bu hafta itibarıyla aktif hale getirdim. Mevcut eksikliklerine rağmen, şu anki haliyle tatmin edici bir seviyeye ulaştığını ve sorunsuz bir şekilde çalıştığını gözlemlemekteyim.
+
+Blog altyapısı olarak **Astro.Build** 'ı tercih ettim. Astro ile Google IDX'in blogunu incelerken tanıştım ve statik web sitelerine olan ilgimden dolayı oldukça beğendim. Statik web sitelerine olan bu ilgim, 2000'li yıllarda HTML ve CSS ile oluşturduğumuz basit web sitelerini anımsatıyor.
+
+Astro'da sıfırdan bir tema oluşturmak yerine, hazır bir tema ile başlamanın daha pratik olacağını düşündüm. **WordPress** veya **Blogger** gibi platformlarda bulunan zengin tema seçeneklerine kıyasla daha sınırlı sayıda tema barındırsa da, mevcut temaların ihtiyaçları karşılayacak nitelikte ve estetik olduğunu düşünüyorum. İhtiyaçlarınıza uygun ücretsiz veya ücretli temaları keşfetmek için Astro'nun web sitesini ziyaret edebilirsiniz.
+
+Kullandığım tema, **EvaSunMaple** kullanıcısı tarafından geliştirilen **Frosti Template** 'tir.
+
+Temada kullanılan diller şu şekildedir:
+
+| Dil | Yüzde |
+| --- | --- |
+| Astro | %76.2 |
+| Yazılı metin | %10.0 |
+| SÇSS | %6.5 |
+| JavaScript | %4.8 |
+| MDX | %2,5 |
+
+Kodu incelediğimde, anlaşılır, iyi düzenlenmiş ve özelleştirilebilir olduğunu gördüm. Şu an için tema üzerinde kapsamlı bir kişiselleştirme yapmadım. Özellikle temanın Türkçeleştirilmesi konusunda henüz kararsızım.
+
+Temadaki koyu ve açık renk şemalarını değiştirmek oldukça kolay, bu da takdir ettiğim bir özellik.
+
+Temanın geliştiricilere odaklanmış yapısı nedeniyle, birçok **GitHub** bağlantısı içeriyordu. Profesyonel bir yazılımcı olmadığım ve GitHub'da yayınlayacak düzeyde bir çalışma yapmadığım için bu GitHub kartlarını kaldırdım.
+
+Henüz kişisel zevkime uygun bir logo tasarlamadım, ancak en kısa sürede bu konuya eğileceğim. Hem karanlık tema için hem de aydınlık tema için ayrı ayrı logo tasarımı yapacağım.
+
+İletişim için doğrudan e-posta gönderme seçeneği yerine, sosyal medya hesaplarının bağlantılarını ve basit bir iletişim formu içeren bir iletişim sayfası oluşturdum. Şu an için en temel haliyle eklediğim bu formu, gelecekte daha gelişmiş özelliklerle özelleştirmeyi planlıyorum. Örneğin, mesaj yazıldıktan sonra sayfada kalan ve **reCAPTCHA** özelliği içeren bir form kullanmak daha kullanışlı olacaktır.
+
+Blog gönderilerine yorum ekleme özelliği konusunda da kararsızım ve muhtemelen bu özelliği eklemeyeceğim.
+
+Son olarak, anasayfada en son yayınlanan blog yazılarını listeleyen bir özellik eklemek istiyorum.
+
+Temanın kullanışlı olmasının nedenlerinden biri de **MDX** desteği sunmasıdır. Markdown içerik oluşturmayı seviyorum. MDX'e aşina değilseniz, *Markdown ve JSX'in birleşimi* olarak düşünebilirsiniz. Markdown'un gelişmiş bir versiyonu olan MDX, kullanıcılara içeriklerine özel **React** öğeleri ekleme imkanı sunarak *süper güçler* kazandırır. (React veya React.js, 2011 yılında Facebook tarafından geliştirilen, kullanıcı arayüzü oluşturmaya yarayan, açık kaynak kodlu bir JavaScript kütüphanesidir.)
+
+MDX ile etkileşimli widget'lar oluşturarak bunları blog yazılarına ekleyebilirsiniz.
+
+**Örneğin:**
+
+<Diff r="/image/r.png" l="/image/l.png"></Diff>
+
+Blogun tüm dosyalarını GitHub üzerinde saklıyor ve **Netlify** üzerinden yayınlıyorum.
+
+Netlify, belirli bir trafik sınırına kadar ücretsiz kullanım imkanı sunarak GitHub web projelerinizi ücretsiz bir şekilde hayata geçirmenin kolay bir yolunu sunar.
+
+Netlify'de ücretsiz URL ve SSL tanımlama imkanı da bulunmaktadır.
+
+Netlify'de bir GitHub projesi yayınlamak, hızlı ve kullanıcı dostu bir işlemdir.
+
+Tüm bunları da; 3 farklı bilgisayar kullanıdığım için ve fazla kodlama yapmayacağımı düşünerek daha pratik olması açısından yerelde Visual Studio Code yerine Google IDX kullarak oluşturdum.
+Bu sayede çalıştığım bilgisayardan hızlıca erişim sağlayıp yazı yayınlayabiliyorum.
+
+**Özetler:**
+
+- Blog yayına alındı, Astro altyapısı kullanıldı.
+- Frosti teması kullanılıyor, kişiselleştirme çalışmaları devam ediyor.
+- İletişim sayfası oluşturuldu, logo tasarımı yapılacak.
+- MDX desteği sayesinde etkileşimli içerikler eklenebiliyor.
+- GitHub ve Netlify kullanılarak yayın yapılıyor.
+
