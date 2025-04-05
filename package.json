@@ -30,7 +30,6 @@
     "marked": "^14.1.4",
     "mdast-util-to-string": "^4.0.0",
     "medium-zoom": "^1.1.0",
-    "ngx-extended-pdf-viewer": "^23.0.0-alpha.7",
     "octokit": "^4.1.2",
     "partytown": "^0.0.0",
     "rehype-external-links": "^3.0.0",
