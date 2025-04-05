@@ -78,7 +78,7 @@ user:
       - href: "https://www.strava.com/athletes/esersevinc/"
         ariaLabel: Strava
         title: Strava
-        svg: "bi:strava-line"
+        svg: "ri:github-line"
       - href: "https://buymeacoffee.com/esersevinc"
         ariaLabel: Support my work
         title: Bir kahve ısmarla
@@ -104,4 +104,4 @@ user:
       - href: "https://www.strava.com/athletes/esersevinc/"
         ariaLabel: Strava
         title: Strava
-        svg: "ri:strava-line"
+        svg: "ri:github-line"
