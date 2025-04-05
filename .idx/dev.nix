@@ -6,7 +6,7 @@
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.pnpm
+    # pkgs.pnpm
     # pkgs.go
     # kgs.python311
     # pkgs.python311Packages.pip
