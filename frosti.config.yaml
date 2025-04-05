@@ -104,4 +104,4 @@ user:
       - href: "https://www.strava.com/athletes/esersevinc/"
         ariaLabel: Strava
         title: Strava
-        svg: "tabler:brand-strava "
+        svg: "si:strava"
