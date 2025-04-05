@@ -16,3 +16,5 @@ const { title, description, favicon, image } = Astro.props as HeaderProps;
 <meta name="description" content={description} />
 {image && <meta property="og:image" content={image} />}
 <link rel="canonical" href={canonicalURL.toString()} />
+<meta name="fediverse:creator" content="@esersevinc@mastodon.social"/>
+<a href='https://mastodon.social/@esersevinc' rel='me'/>
