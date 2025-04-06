@@ -34,7 +34,7 @@ export default defineConfig({
     tailwind({
       configFile: "./tailwind.config.mjs",
     }),
-    partytown()
+    partytown(),
     playformCompress(),
   ],
   markdown: {
