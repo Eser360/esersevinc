@@ -8,6 +8,7 @@ import Header from "@components/Header.astro";
 import Sidebar from "@components/Sidebar.astro";
 import Footer from "@components/Footer.astro";
 import Navbar from "@components/Navbar.astro";
+import GoogleAnalytics from "@/components/GoogleAnalytics.astro";
 
 const { title, image, headings = [], showTOC = false } = Astro.props;
 ---
@@ -15,8 +16,7 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
 <!doctype html>
 <html lang={SITE_LANGUAGE} class="bg-base-300" data-theme={SITE_THEME.light}>
   <head>
-    <GoogleAnalytics />
-    <ClientRouter />
+        <ClientRouter />
     <ElementCrossing />
     <PointerOnNavigation />
     <Header title={SITE_TITLE} description={SITE_DESCRIPTION} favicon={SITE_FAVICON} image={image} />
@@ -52,6 +52,7 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
       })();
     </script>
   </head>
+  <GoogleAnalytics />
   <body>
     <!-- Mobile Navbar - Hidden on desktop -->
     <Navbar />
