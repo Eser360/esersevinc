@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import { USER_NAME, USER_SITE, USER_FOOTER_SOCIAL_ICONS } from "@config";
-import GoogleAnalytics from "@/components/GoogleAnalytics.astro";
+import Footer from "@components/GoogleAnalytics.astro.astro";
 ---
 
 <div class="bg-transparent order-5" transition:name="footer">
@@ -21,7 +21,11 @@ import GoogleAnalytics from "@/components/GoogleAnalytics.astro";
         ></path>
       </svg>
       <p>
-        Bu web sitesi Astro.Build üzerine <a href="https://github.com/EveSunMaple/Frosti" target="_blank" class="font-bold">Frosti Template</a> özelleştirilerek oluşturulmuştur.
+        Bu web sitesi Astro.Build üzerine <a
+          href="https://github.com/EveSunMaple/Frosti"
+          target="_blank"
+          class="font-bold">Frosti Template</a
+        > özelleştirilerek oluşturulmuştur.
         <br />
         Copyright © <a href={USER_SITE} target="_blank" class="font-bold">{USER_NAME}</a>
         {new Date().getFullYear()} - Tüm hakları saklıdır.
