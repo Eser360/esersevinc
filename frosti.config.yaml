@@ -7,7 +7,7 @@ site:
   favicon: /favicon.ico # Tarayıcı sekmelerinde ve diğer yerlerde kullanılan web sitesinin simgesi
   theme: # Daha fazla tema için https://daisyui.com/docs/themes/
     light: light # Açık mod
-    dark: dracula # Koyu mod
+    dark: dim # Koyu mod
     code: monokai # Kod bloğunun teması https://shiki.style/themes
   date_format: ddd MMM DD YYYY # Tarih biçimi ayarı, özel biçimi destekler
   blog: # Blog ile ilgili yapılandırma
