@@ -34,12 +34,9 @@ export default defineConfig({
     tailwind({
       configFile: "./tailwind.config.mjs",
     }),
+    partytown()
     playformCompress(),
   ],
-  export default defineConfig({
-    // ...
-    integrations: [partytown()]
-  }); 
   markdown: {
     shikiConfig: {
       theme: CODE_THEME,
