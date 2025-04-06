@@ -8,44 +8,12 @@ import PostFilter from "./PostFilter.astro";
 const { title, url, pubDate, badge, categories = [], tags = [], word, time } = Astro.props as PostData;
 const displayDate = pubDate ? dayjs(pubDate).format(DATE_FORMAT) : "";
 
-const socialLinks = [
-  {
-    name: "X (Twitter)",
-    icon: "ri:twitter-x-line",
-    class: "bg-black hover:bg-gray-800",
-    url: `https://twitter.com/intent/tweet/?text=${title}&url=${url}`,
-  },
-  {
-    name: "Telegram",
-    icon: "ri:telegram-line",
-    class: "bg-[#26a5e4] hover:bg-[#1e96d1]",
-    url: `https://telegram.me/share/url?text=${title}&url=${url}`,
-  },
-  {
-    name: "Reddit",
-    icon: "ri:reddit-line",
-    class: "bg-[#ff4500] hover:bg-[#e63e00]",
-    url: `https://reddit.com/submit/?url=${url}&title=${title}`,
-  },
-  {
-    name: "Facebook",
-    icon: "ri:facebook-circle-line",
-    class: "bg-[#0866ff] hover:bg-[#0755d6]",
-    url: `https://facebook.com/sharer/sharer.php?u=${url}`,
-  },
-  {
-    name: "Email",
-    icon: "ri:mail-line",
-    class: "bg-gray-600 hover:bg-gray-700",
-    url: `mailto:?subject=${title}&body=${url}`,
-  },
-];
 ---
 
 <hr />
 <div class="container p-0">
   <div class="text-right text-sm text-base-content/60 italic mb-2">
-    <Icon name="ri:heart-line" class="w-4 h-4 inline-block align-text-bottom text-error" /> Thanks for reading!
+    <Icon name="ri:heart-line" class="w-4 h-4 inline-block align-text-bottom text-error" /> Okuduğunuz için teşekkürler!
   </div>
 
   <div class="card bg-base-200 overflow-visible">
@@ -101,7 +69,7 @@ const socialLinks = [
           <PostFilter categories={categories} tags={tags} />
           <!-- License Info -->
           <p class="text-sm opacity-75 mt-4 pt-4 border-t">
-            © {USER_NAME} |
+            Lisans© {USER_NAME} |
             <a
               href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed"
               target="_blank"
@@ -113,13 +81,6 @@ const socialLinks = [
           </p>
         </div>
 
-        <!-- Share Button -->
-        <div class="flex justify-end mt-4">
-          <button class="btn btn-primary btn-outline" onclick="share_modal.showModal()">
-            {t("label.share")}
-            <Icon name="ri:share-line" class="w-5 h-5" />
-          </button>
-        </div>
       </div>
     </div>
 
