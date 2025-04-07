@@ -50,16 +50,15 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
         });
       })();
     </script>
-    <!-- Google tag (gtag.js) -->
-<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-VS8ZV5Z67G"></script>
-<script type="text/partytown">
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-  gtag("config", "G-VS8ZV5Z67G");
-</script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VS8ZV5Z67G"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VS8ZV5Z67G');
+      </script>
   </head>
   <body>
     <!-- Mobile Navbar - Hidden on desktop -->
