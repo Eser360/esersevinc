@@ -35,9 +35,9 @@ export default defineConfig({
     tailwind({
       configFile: "./tailwind.config.mjs",
     }),
-    partytown({ config: { forward: ['dataLayer.push'] } }),
     playformCompress(),
   ],
+  integrations: [partytown({ config: { forward: ['dataLayer.push'] } })],
   markdown: {
     shikiConfig: {
       theme: CODE_THEME,
