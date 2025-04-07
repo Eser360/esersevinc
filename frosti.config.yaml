@@ -28,22 +28,22 @@ site:
       href: /blog
       svg: "material-symbols:book-2-outline-rounded"
       target: _self
-      subItems:
-        - id: all
-          text: Tüm yazılar
-          href: /blog
-          svg: "material-symbols:ink-pen-outline-rounded"
-          target: _self
-        - id: work
-          text: İş ile ilgili
-          href: /blog/category/work
-          svg: "material-symbols:deployed-code-outline"
-          target: _self
-        - id: life
-          text: Kişisel yaşam
-          href: /blog/category/life
-          svg: "material-symbols:earthquake-rounded"
-          target: _self
+      # subItems:
+        #- id: all
+        #  text: Tüm yazılar
+        #  href: /blog
+        #  svg: "material-symbols:ink-pen-outline-rounded"
+        #  target: _self
+        #- id: work
+        #  text: İş ile ilgili
+        #  href: /blog/category/work
+        #  svg: "material-symbols:deployed-code-outline"
+        #  target: _self
+        #- id: life
+        #  text: Kişisel yaşam
+        #  href: /blog/category/life
+        #  svg: "material-symbols:earthquake-rounded"
+        #  target: _self
         # Alt menü öğesi yapılandırması
     - id: project
       text: Projeler
