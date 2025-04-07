@@ -9,7 +9,7 @@ import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
-import { partytown } from 'astro/config';
+import partytown from '@astrojs/partytown';
 
 import { CODE_THEME, USER_SITE } from "./src/config.ts";
 
@@ -35,7 +35,11 @@ export default defineConfig({
     tailwind({
       configFile: "./tailwind.config.mjs",
     }),
-    partytown(),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
     playformCompress(),
   ],
   markdown: {
