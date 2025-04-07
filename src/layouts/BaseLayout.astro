@@ -15,7 +15,7 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
 <!doctype html>
 <html lang={SITE_LANGUAGE} class="bg-base-300" data-theme={SITE_THEME.light}>
   <head>
-        <ClientRouter />
+    <ClientRouter />
     <ElementCrossing />
     <PointerOnNavigation />
     <Header title={SITE_TITLE} description={SITE_DESCRIPTION} favicon={SITE_FAVICON} image={image} />
@@ -50,15 +50,18 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
         });
       })();
     </script>
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VS8ZV5Z67G"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-VS8ZV5Z67G');
-      </script>
+    <!-- Google tag (gtag.js) -->
+    <script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-VS8ZV5Z67G"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VS8ZV5Z67G");
+    </script>
   </head>
   <body>
     <!-- Mobile Navbar - Hidden on desktop -->
