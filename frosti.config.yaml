@@ -6,7 +6,7 @@ site:
   language: en # Web sitesinin dili, örneğin "en" İngilizce
   favicon: /favicon.ico # Tarayıcı sekmelerinde ve diğer yerlerde kullanılan web sitesinin simgesi
   theme: # Daha fazla tema için https://daisyui.com/docs/themes/
-    light: light # Açık mod
+    light: lofi # Açık mod
     dark: halloween # Koyu mod
     code: monokai # Kod bloğunun teması https://shiki.style/themes
   date_format: ddd MMM DD YYYY # Tarih biçimi ayarı, özel biçimi destekler
