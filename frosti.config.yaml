@@ -29,7 +29,7 @@ site:
       svg: "material-symbols:book-2-outline-rounded"
       target: _self
       # subItems:
-        - id: all
+        # id: all
         #  text: Tüm yazılar
         #  href: /blog
         #  svg: "material-symbols:ink-pen-outline-rounded"
