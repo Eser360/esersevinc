@@ -63,7 +63,7 @@ site:
 # Kullanıcının Kişisel Bilgileri
 user:
   name: Eser Sevinç # kullanıcı adı
-  site: "Eser Sevinç" # Kullanıcının web sitesi bağlantısı
+  site: "https://esersevinc.com.tr" # Kullanıcının web sitesi bağlantısı
   avatar: /ESLOGO.png # Kullanıcı avatar yolu
   sidebar: # Kenar Çubuğu Yapılandırması
     social:
