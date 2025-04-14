@@ -1,7 +1,7 @@
 # 网站的基本信息
 site:
   tab: Eser Sevinç # Tarayıcı sekme çubuğu görüntülenir
-  title: Eser Sevinç'in kişisel blogu. # Web sitesinin başlığı
+  title: Eser Sevinç'in Blogu # Web sitesinin başlığı
   description: Yazılım sektöründe; İş Analizi, Proje Yönetimi, Ekip Yönetimi ve Liderlik gibi konular üzerine bilgi birikimi. # SEO vb. için kullanılan web sitesinin tanımı.
   language: en # Web sitesinin dili, örneğin "en" İngilizce
   favicon: /favicon.ico # Tarayıcı sekmelerinde ve diğer yerlerde kullanılan web sitesinin simgesi
@@ -63,7 +63,7 @@ site:
 # Kullanıcının Kişisel Bilgileri
 user:
   name: Eser Sevinç # kullanıcı adı
-  site: "https://esersevinc.com.tr" # Kullanıcının web sitesi bağlantısı
+  site: "Eser Sevinç" # Kullanıcının web sitesi bağlantısı
   avatar: /ESLOGO.png # Kullanıcı avatar yolu
   sidebar: # Kenar Çubuğu Yapılandırması
     social:
