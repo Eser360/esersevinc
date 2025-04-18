@@ -10,8 +10,6 @@ import rehypeExternalLinks from "rehype-external-links";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 import partytown from '@astrojs/partytown';
-import { partytown } from 'astro/config';
-
 
 import { CODE_THEME, USER_SITE } from "./src/config.ts";
 
