@@ -15,7 +15,6 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
 <!doctype html>
 <html lang={SITE_LANGUAGE} class="bg-base-300" data-theme={SITE_THEME.light}>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
     <ClientRouter />
     <ElementCrossing />
     <PointerOnNavigation />
@@ -51,21 +50,9 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
         });
       })();
     </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script data-category="analytics" is:inline type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-VS8ZV5Z67G"></script>
-
-    <script is:inline type="text/partytown">
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-     dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-VS8ZV5Z67G");
-    </script>
+    <script src="https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js" data-app-id="ED27DE8C-85CD-47BD-A215-69388F308B14"></script>
   </head>
   <body>
-   <script type="module" src="/cookieconsent-config.js"></script>
     <!-- Mobile Navbar - Hidden on desktop -->
     <Navbar />
     <div class="max-w-6xl mx-auto">
