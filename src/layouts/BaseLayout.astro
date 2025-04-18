@@ -15,6 +15,7 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
 <!doctype html>
 <html lang={SITE_LANGUAGE} class="bg-base-300" data-theme={SITE_THEME.light}>
   <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css" />
     <ClientRouter />
     <ElementCrossing />
     <PointerOnNavigation />
@@ -62,7 +63,6 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
     gtag("js", new Date());
     gtag("config", "G-VS8ZV5Z67G");
     </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css" />
   </head>
   <body>
     <script type="module" src="/script/cookieconsent.min.js"></script>
