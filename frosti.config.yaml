@@ -79,6 +79,10 @@ user:
         ariaLabel: Strava
         title: Strava
         svg: "ri:riding-line"
+      - href: "https://esersevinc.com.tr/rss.xml"
+        ariaLabel: RSS
+        title: RSS
+        svg: "ri:rss-line"
   footer:
     social:
       - href: "https://buymeacoffee.com/esersevinc" # Bağlantı
@@ -93,10 +97,6 @@ user:
         ariaLabel: Mastodon
         title: Mastodon
         svg: "ri:mastodon-line"
-      - href: "https://bsky.app/profile/esersevinc.bsky.social"
-        ariaLabel: Bluesky
-        title: Bluesky
-        svg: "ri:bluesky-line"
       - href: "https://www.linkedin.com/in/esersevinc/"
         ariaLabel: Linkedin
         title: Linkedin
